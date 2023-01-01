@@ -1,0 +1,166 @@
+.toggle:hover {
+  background-color: rgba(52, 58, 64, 0.2);
+}
+
+.navbar {
+    padding: .2rem 1rem;
+    flex-basis: 15%;
+}
+
+.navbar > li {
+  list-style: none;
+}
+
+.navIcons {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+.menuBars {
+  margin-left: 1.25rem;
+  font-size: larger;
+  background: none;
+  color: black;
+}
+
+.navMenu {
+  width: 200px;
+  background-color: #121212;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 1700ms;
+}
+
+.navMenuActive {
+  background-color: #121212;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-basis: 20%;
+  transition: 600ms;
+}
+
+.navText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0px 8px 0px;
+  list-style: none;
+  height: 60px;
+}
+
+.navText a{
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.navbar > span {
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.navText a:hover {
+  background-color: rgb(37 99 235);
+}
+
+.navMenuItems {
+  width: 100%;
+  padding-left: 0px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+  
+.navbarToggle {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4vh 0px
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 10%;
+    background-color: #FFE62B;
+    height: 8vh;
+    max-height: max-content;
+    position: fixed;
+    width: 100%;
+}
+
+.avatarParent {
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  gap: 10px
+}
+
+.navbar > img {
+  max-width: 70%;
+  margin: auto;
+}
+
+
+.progress {
+  border-radius: 25px;
+  flex-basis: 100%;
+  background-color: #f5f5f5;
+}
+
+.progressBar {
+  border-radius: 25px;
+  background-color: #000000;
+}
+
+.progressWrapper {
+  flex-basis: 70%;
+  display: flex;
+  align-items: center;
+  transition: 900ms;
+}
+
+.progressWrapper.active {
+  margin-left: 17vw;
+  flex-basis: 50%;
+  transition: 900ms;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .nav-menu {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .header {
+    height: 40px;
+  }
+}
